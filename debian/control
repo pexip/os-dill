@@ -1,0 +1,29 @@
+Source: dill
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Josue Ortega <josue@debian.org>
+Section: python
+Testsuite: autopkgtest-pkg-python
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/python-team/packages/dill
+Vcs-Git: https://salsa.debian.org/python-team/packages/dill.git
+Homepage: https://github.com/uqfoundation/dill
+Rules-Requires-Root: no
+
+Package: python3-dill
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Suggests: python3-objgraph
+Description: Serialize all of Python 3 (almost)
+ Dill extends Python 3's 'pickle' module for serializing and
+ de-serializing Python 3 objects to the majority of the built-in Python 3 types.
+ Dill provides the user the same interface as the 'pickle' module, and also
+ includes some additional features. In addition to pickling Python 3 objects,
+ dill provides the ability to save the state of an interpreter session in a
+ single command.
+ Dill can be used to store Python 3 objects to a file, but the primary usage is
+ to send Python 3 objects across the network as a byte stream.

@@ -1,0 +1,188 @@
+dill (0.3.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/patches/
+    - drop patches, merged upstream
+  * debian/copyright
+    - update upstream copyright years
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 10 Dec 2022 20:21:39 -0500
+
+dill (0.3.4-2) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Thu, 26 May 2022 10:35:55 +0100
+
+dill (0.3.4-1) unstable; urgency=medium
+
+  * New upstream release (0.3.4)
+  * debian/control: Declare field Rules-Requires-Root as no
+  * Bump Standards Version to 4.5.1. No changes required
+  * Document debian/patches with forwarded as not-needed
+  * Bump debian/watch to version 4
+
+ -- Josue Ortega <josue@debian.org>  Tue, 17 Aug 2021 08:58:12 -0600
+
+dill (0.3.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/patches/*
+    - refresh patches
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 09 Nov 2020 20:39:34 -0500
+
+dill (0.3.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/copyright
+    - update upstream copyright years
+  * debian/control
+    - bump compat level to 13
+    - bump Standards-Version to 4.5.0 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 16 Jul 2020 21:09:22 -0400
+
+dill (0.3.1.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version
+  * Point Vcs fields to salsa.debian.org
+  * Respect DEB_BUILD_OPTIONS in override_dh_auto_test target
+  * Drop ancient X-Python-Version field
+  * Set upstream metadata fields: Repository.
+
+ -- Andreas Tille <tille@debian.org>  Tue, 01 Oct 2019 14:47:05 +0200
+
+dill (0.3.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop Python 2 support.
+  * Enable autopkgtest-pkg-python testsuite.
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 24 Aug 2019 22:55:58 +0200
+
+dill (0.3.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+  [ Josue Ortega ]
+  * New upstream release (0.3.0)
+  * Bump debhelper-compat to use (= 12)
+  * Update debian/watch to use pypy.debian.net
+
+ -- Josue Ortega <josue@debian.org>  Sun, 21 Jul 2019 11:27:01 -0300
+
+dill (0.2.9-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Josue Ortega ]
+  * New upstream release (0.2.9-1):
+    - Update debian/patches
+  * debian/copyright: Update copyright holders year
+  * Bump Standards-Version to 4.3.0:
+    - debian/control: Add Rules-Requires-Root field
+  * Add CI tests
+
+ -- Josue Ortega <josue@debian.org>  Tue, 22 Jan 2019 09:36:27 -0600
+
+dill (0.2.8.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python-Version field
+
+  [ Josue Ortega ]
+  * New upstream release (0.2.8.2-1).
+  * debian/control:
+    - Bumps X-Python3-Version to >= 3.6.
+    - Bumps Standards-Version to 4.1.5, no changes needed.
+  * Bumps compat level from 9 to 11.
+  * debian/copyright:
+    - Update copyright years.
+    - Update debian/* copyright holder email.
+    - Remove entry for dill/dill.py
+
+ -- Josue Ortega <josue@debian.org>  Mon, 30 Jul 2018 16:06:59 +0800
+
+dill (0.2.7.1-1) unstable; urgency=medium
+
+  * New upstream release (0.2.7.1)
+  * debian/control:
+    - Bumps X-Python3-Version to 3.5.
+    - Bumps Standards-Version to 4.0.1 no changes required.
+
+ -- Josue Ortega <josue@debian.org>  Sat, 12 Aug 2017 22:11:06 -0400
+
+dill (0.2.7-1) unstable; urgency=medium
+
+  * New upstream release (0.2.7):
+    - debian/copyright: Adds new copyright holder (The Uncertainty
+      Quantification Foundation) and updates copyright holder range.
+    - debian/rules: Adds override_dh_auto_test, upstream tests are broken using
+      unnitest.
+    - Adds patch to avoid installation of python scripts under `/usr/bin`.
+  * debian/control:
+    - Updates uploader email.
+    - Bumps Standards-Version to 4.0.0: debian/copyright Format field changed
+      to use https mode.
+
+ -- Josue Ortega <josue@debian.org>  Sun, 16 Jul 2017 13:34:53 -0600
+
+dill (0.2.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop obsolete depends on python-ctypeslib (Closes: #827565)
+  * Fix typo in Vcs-Git field in debian/control
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 18 Jun 2016 01:39:04 -0400
+
+dill (0.2.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Bumped X-Python3-Version to 3.4
+    - Changed Vcs-* fields to use secure uri
+
+ -- Josue Ortega <josueortega@debian.org.gt>  Wed, 10 Feb 2016 08:12:50 -0600
+
+dill (0.2.4-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated debian/patches/*.
+  * debian/control:
+    - Changed VCS from collab-maint to python-modules repository.
+    - Removed unnecessary dependencies: python-setuptools, python3-setuptools.
+    - Removed version from python-all and python3-all
+ -- Josue Ortega <josueortega@debian.org.gt>  Thu, 20 Aug 2015 12:06:36 +0200
+
+dill (0.2.3-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated debian/patches.
+  * debian/watch: Fixed versioning format, since upstream changed it.
+  * debian/control: Added missing dh-python dependency
+
+ -- Josue Ortega <josueortega@debian.org.gt>  Thu, 16 Jul 2015 23:42:46 -0600
+
+dill (0.2.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #771596).
+
+ -- Josue Ortega <josueortega@debian.org.gt>  Sun, 30 Nov 2014 16:38:44 -0600
