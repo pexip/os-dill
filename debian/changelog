@@ -1,3 +1,9 @@
+dill (0.3.6-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Huw Jones <huw@pexip.com>  Fri, 17 Mar 2023 15:49:28 +0000
+
 dill (0.3.6-1) unstable; urgency=medium
 
   * New upstream release

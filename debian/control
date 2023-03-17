@@ -1,6 +1,7 @@
 Source: dill
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: Josue Ortega <josue@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: Josue Ortega <josue@debian.org>
 Section: python
 Testsuite: autopkgtest-pkg-python
 Priority: optional
@@ -12,6 +13,7 @@ Vcs-Browser: https://salsa.debian.org/python-team/packages/dill
 Vcs-Git: https://salsa.debian.org/python-team/packages/dill.git
 Homepage: https://github.com/uqfoundation/dill
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: python3-dill
 Architecture: all
